@@ -90,9 +90,11 @@ crypto map OMAPA
 ```
 
 
-KEY -> `crypto isakmp key Passw0rd address 1.1.0.2`
+KEY -> ```crypto isakmp key Passw0rd address 1.1.0.2```
 
-       `crypto ipsec transform-set TRANS ah-sha-hmac esp-aes 256 esp-sha-hmac`
+
+
+```crypto ipsec transform-set TRANS ah-sha-hmac esp-aes 256 esp-sha-hmac```
 
 ```
 crypto map OMAPA 10 ipsec-isakmp
