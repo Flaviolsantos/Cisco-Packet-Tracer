@@ -128,7 +128,7 @@ crypto map MAP
 KEY  `crypto isakmp key Passw0rd address 2.1.0.2`
 
 
-     `crypto ipsec transform-set TRANSF ah-sha-hmac esp-aes 256 esp-sha-hmac`
+`crypto ipsec transform-set TRANSF ah-sha-hmac esp-aes 256 esp-sha-hmac`
 
 ```
 crypto map MAP 10 ipsec-isakmp
