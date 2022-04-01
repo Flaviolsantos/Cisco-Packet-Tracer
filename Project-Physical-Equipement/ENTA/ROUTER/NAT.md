@@ -23,3 +23,26 @@ ip nat inside source list 2 interface s0/0/1 overload
 
 ```
 
+NAT on Interfaces
+
+```
+int s0/0/0
+ip nat outside
+```
+
+```
+int s0/0/1
+ip nat outside
+```
+
+```
+int f0/0
+ip nat inside
+```
+
+```
+int f0/1
+ip nat outside
+```
+
+
