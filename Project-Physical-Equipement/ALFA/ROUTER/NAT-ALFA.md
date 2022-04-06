@@ -13,6 +13,8 @@ NAT overload
 
 ```
 ip nat inside source list 1 interface s0/0/0 overload
+ip nat inside source static tcp 172.17.1.2 80 1.1.0.2 80 
+ip nat inside source static tcp 172.17.1.2 443 1.1.0.2 443 
 ```
 
 NAT on Interfaces
