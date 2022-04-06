@@ -9,7 +9,6 @@ access-list 1 permit 172.16.0.0 0.15.255.255
 acess-list 1 permit 192.168.0.0 0.0.255.255
 ```
 ```
-access-list 100 permit gre host 1.11.0.2 host 1.1.0.1
 access-list 100 permit tcp any any eq www
 access-list 100 permit tcp any any eq 443
 access-list 100 permit ip any 1.1.0.0 0.0.0.3
