@@ -5,7 +5,7 @@ interface GigabitEthernet1/1
 bridge-group 1
 nameif outside
 security-level 0
-ip address 172.16.1.1 255.2555.255.0
+ip address 172.16.1.1 255.255.255.0
 no shutdown
 
 interface GigabitEthernet1/2
