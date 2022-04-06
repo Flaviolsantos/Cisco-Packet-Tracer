@@ -16,6 +16,10 @@ interface Tunnel1
 Routing 
 
 ```
+ip route 172.17.11.0 255.255.255.0 172.16.1.2 
+ip route 172.18.11.0 255.255.255.0 172.16.1.2 
+
+
 router eigrp 100
 no auto-summary
 passive-interface FastEthernet0/0
