@@ -69,3 +69,15 @@ ip nat inside source list 1 interface s0/1/1 overload
 ip nat inside source static tcp 172.17.1.2 80 2.1.0.2 80 
 ip nat inside source static tcp 172.17.1.2 443 2.1.0.2 443 
 ```
+
+NAT on Interfaces
+
+```
+int s0/0/0
+ip nat outside
+```
+
+```
+int f0/0
+ip nat inside
+```
