@@ -73,11 +73,15 @@ ip nat inside source static tcp 172.17.1.2 443 2.1.0.2 443
 NAT on Interfaces
 
 ```
-int s0/0/0
-ip nat outside
+interface Serial0/1/1
+ ip address 2.2.0.2 255.255.255.252
+ ip nat outside
+ ip virtual-reassembly in
 ```
 
 ```
-int f0/0
-ip nat inside
+interface FastEthernet0/0
+ ip address 172.16.2.3 255.255.255.0
+ ip nat inside
+ ip virtual-reassembly in
 ```
