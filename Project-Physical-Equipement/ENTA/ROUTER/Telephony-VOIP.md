@@ -4,9 +4,9 @@ TELEPHONY
 ```
 telephony-service
 max-ephones 10
-max-dn 10
+max-dn 3
 ip source-address 10.1.1.1 port 2000
-auto assign 1 to 10
+auto assign 1 to 3
 create cnf-files 
 ```
 
