@@ -36,8 +36,8 @@ network 172.18.0.0 0.0.0.255
 ```
 crypto map OMAPA 10 ipsec-isakmp
     set peer 1.1.0.1
-    match address 100
-access-list 100 permit gre host 1.1.0.1 host 1.1.0.2
+    match address 101
+access-list 101 permit gre host 1.1.0.1 host 1.1.0.2
 ```
 ```
 int s0/0/0
