@@ -51,6 +51,7 @@ For Tunnel 1
 router eigrp 100
 no auto-summary
 redistribute static 
+redistribute eigrp 200 metric 140 0 255 140 1 
 redistrbute eigrp 200 
 passive-interface f0/0
 passive-interface f0/1
@@ -63,10 +64,10 @@ network 192.168.1.0 0.0.0.3
 For Tunnel 2
 
 ```
-router eigrp 100
+router eigrp 200
 no auto-summary
 redistribute static 
-redistrbute eigrp 100 
+redistribute eigrp 100 metric 140 0 255 140 1 
 passive-interface f0/0
 passive-interface f0/1
 passive-interface s0/0/0
