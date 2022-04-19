@@ -51,6 +51,7 @@ For Tunnel 1
 router eigrp 100
 no auto-summary
 redistribute static 
+redistrbute eigrp 200 
 passive-interface f0/0
 passive-interface f0/1
 passive-interface s0/0/0
@@ -65,6 +66,7 @@ For Tunnel 2
 router eigrp 100
 no auto-summary
 redistribute static 
+redistrbute eigrp 100 
 passive-interface f0/0
 passive-interface f0/1
 passive-interface s0/0/0
