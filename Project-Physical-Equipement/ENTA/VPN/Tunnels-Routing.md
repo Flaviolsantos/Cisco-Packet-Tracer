@@ -29,6 +29,7 @@ int tun1
  ip address 192.168.1.1 255.255.255.252
  tunnel source Serial0/0/0
  tunnel destination 1.1.0.2
+ no shutdown
 
 ```
 
@@ -39,6 +40,7 @@ int tun2
  ip address 192.168.1.5 255.255.255.252
  tunnel source Serial0/0/1
  tunnel destination 2.1.0.2
+ no shutdown
 
 ```
 
