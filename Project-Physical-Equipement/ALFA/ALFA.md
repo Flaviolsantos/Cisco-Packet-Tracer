@@ -10,7 +10,7 @@ interface Tunnel1
  ip address 192.168.1.2 255.255.255.252
  tunnel source Serial0/1/1
  tunnel destination 1.1.0.1
- 
+ no shutdown
 ```
 
 Routing 
@@ -97,7 +97,7 @@ interface Serial0/1/1
  ip address 1.1.0.2 255.255.255.252
  ip nat outside
  ip virtual-reassembly in
- clock rate 125000
+ no shutdown
 ```
 
 ```
@@ -105,6 +105,5 @@ interface FastEthernet0/0
  ip address 172.16.1.1 255.255.255.0
  ip nat inside
  ip virtual-reassembly in
- duplex auto
- speed auto
+ no shutdown
 ```
