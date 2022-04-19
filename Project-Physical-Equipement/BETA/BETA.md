@@ -5,6 +5,7 @@ interface Tunnel2
  ip address 192.168.1.6 255.255.255.252
  tunnel source Serial0/1/1
  tunnel destination 2.1.0.1
+ no shutdown
 ```
 
 
@@ -77,6 +78,7 @@ interface Serial0/1/1
  ip address 2.2.0.2 255.255.255.252
  ip nat outside
  ip virtual-reassembly in
+ no shutdown
 ```
 
 ```
@@ -84,4 +86,5 @@ interface FastEthernet0/0
  ip address 172.16.2.3 255.255.255.0
  ip nat inside
  ip virtual-reassembly in
+ no shutdown
 ```
