@@ -28,8 +28,8 @@ Tunnel Encriptado
 ```
 crypto map MAP 10 ipsec-isakmp
     set peer 2.1.0.1
-    match address 100
-access-list 100 permit gre host 2.1.0.1 host 2.1.0.2
+    match address 101
+access-list 101 permit gre host 2.1.0.1 host 2.1.0.2
 
 
 
