@@ -46,7 +46,7 @@ int tun2
 
 Routing on Tunnels
 
-For Tunnel 1
+For Tunnel 1 and 2
 ```
 router eigrp 100
 no auto-summary
@@ -58,23 +58,10 @@ passive-interface f0/1
 passive-interface s0/0/0
 passive-interface s0/0/1
 network 192.168.1.0 0.0.0.3
-
-```
-
-For Tunnel 2
-
-```
-router eigrp 200
-no auto-summary
-redistribute static 
-redistribute eigrp 100 metric 140 0 255 140 1 
-passive-interface f0/0
-passive-interface f0/1
-passive-interface s0/0/0
-passive-interface s0/0/1
 network 192.168.1.4 0.0.0.3
-
 ```
+
+
 
 
 Tunnel Encryption
