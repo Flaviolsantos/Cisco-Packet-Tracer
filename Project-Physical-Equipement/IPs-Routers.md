@@ -17,6 +17,9 @@ no shutdown
 ```
 
 ```
+int g0/0
+no shutdown
+
 interface GigabitEthernet0/0.10
 encapsulation dot1Q 10
 ip address 10.0.1.1 255.255.255.0
