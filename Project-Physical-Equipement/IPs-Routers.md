@@ -27,17 +27,17 @@ ip nat inside
 ip virtual-reassembly
 no shutdown
 
-intnterface GigabitEthernet0/0.20
+interface GigabitEthernet0/0.20
 encapsulation dot1Q 20
 ip address 10.1.1.1 255.255.255.0
 ip nat inside
 ip virtual-reassembly
 no shutdown
 
-ininterface GigabitEthernet0/0.30
+interface GigabitEthernet0/0.30
 encapsulation dot1Q 30
 ip address 10.2.1.1 255.255.255.0i
-p nat inside
+ip nat inside
 ip virtual-reassembly in
 no shutdown
 
